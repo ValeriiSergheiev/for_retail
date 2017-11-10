@@ -1,0 +1,55 @@
+/* describe section */
+#describe {
+	position: relative;
+	&::before {
+		display: block;
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 50%;
+		background-image: url('../images/description-bg-left.jpg');
+		z-index: -1;
+	}
+	&::after {
+		display: block;
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		width: 50%;
+		background-image: url('../images/description-bg-right.jpg');
+		z-index: -1;
+	}
+}
+
+.describe-title {
+	margin-bottom: 60px;
+	img {
+		display: block;
+		float: left;
+		margin-right: 40px;
+	}
+	h3 {
+		font-family: pfbeausanspro-semibolditalic;
+		font-size: 3.6rem;
+		margin: 0;
+	}
+	& + p {
+		font-weight: 300;
+		font-size: 1.8rem;
+		max-width: 400px;
+	}
+}
+
+.describe-left {
+	padding: 60px 0;
+}
+
+.describe-right {
+	padding: 60px 0;
+	margin-left: 60px;
+}
+/* end describe section */
