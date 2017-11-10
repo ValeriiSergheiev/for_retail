@@ -1,0 +1,28 @@
+@mixin btn-rounded ($bg, $border, $color) {
+	display: inline-block;
+	background-color: $bg;
+	border: 2px solid $border;
+	color: $color;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border-radius: 25px;
+	text-align: center;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+@mixin btn-sq ($bg, $color) {
+	display: inline-block;
+	background-color: $bg;
+	color: $color;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding: 10px 0;
+	border-radius: 4px;
+	text-align: center;
+	&:hover {
+		opacity: .9;
+	}
+}

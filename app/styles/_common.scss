@@ -1,0 +1,55 @@
+/* common styles */
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: $dark-blue;
+	font-size: inherit;
+	min-width: 320px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+//sprites
+.icon {
+	display: inline-block;
+}
+.icon-fb {
+	@include sprite($fb);
+}
+.icon-phone {
+	@include sprite($phone);
+}
+.icon-arrow-down {
+	@include sprite($arrow-down);
+}
+/* end common styles */

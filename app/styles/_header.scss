@@ -1,0 +1,136 @@
+/* header */
+header {
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+	color: #fff;
+}
+
+.header-top-left {
+	margin-top: 40px;
+	li {
+		display: inline-block;
+		&:first-child {
+			margin-right: 30px;
+		}
+		i {
+			vertical-align: middle;
+		}
+		span {
+			position: relative;
+			top: 4px;
+			margin-left: 10px;
+			font-size: 1.6rem;
+		}
+		a:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.header-logo {
+	text-align: center;
+	a {
+		display: inline-block;
+		padding: 35px;
+		background-color: #fff;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		&:hover {
+			opacity: .9;
+		}
+	}
+}
+
+.header-top-right {
+	margin-top: 40px;
+}
+
+.select-lang {
+	float: right;
+	position: relative;
+	&:hover {
+		.select-lang-content {
+			display: block;
+		}
+	}
+}
+
+.select-lang-btn {
+	@include btn-rounded (transparent, #fff, #fff);
+	width: 130px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	i {
+		margin-right: 20px;
+	}
+}
+
+.select-lang-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-radius: 25px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: $cyan;
+	border: 2px solid #fff;
+	z-index: 1;
+	a {
+		display: block;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0;
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.login {
+	@include btn-rounded (transparent, #fff, #fff);
+	width: 180px;
+	float: right;
+	margin-left: 20px;
+}
+
+.header-middle {
+	h4 {
+		margin: 50px 0 20px;
+		font-family: pfbeausanspro-book;
+		font-size: 3.6rem;
+		& + a {
+			@include btn-sq ($dark-blue, #fff);
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+.mobile-markets {
+	margin-top: 45px;
+	a {
+		display: inline-block;
+		width: 230px;
+		height: 70px;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0 5px;
+		&:first-child {
+			background-image: url('../images/google-play.png');
+		}
+		&:last-child {
+			background-image: url('../images/app-store.png');
+		}
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.header-bottom {
+	margin-top: 10px;
+}
+/* end header */
