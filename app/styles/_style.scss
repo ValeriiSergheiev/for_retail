@@ -53,3 +53,64 @@
 	margin-left: 60px;
 }
 /* end describe section */
+
+/* section how it works */
+.works-item {
+	text-align: center;
+	& > div {
+		min-height: 175px;
+		margin-bottom: 115px;
+		position: relative;
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		&::before {
+			position: absolute;
+			left: calc(50% - 23px);
+			bottom: -66px;
+			height: 46px;
+			width: 46px;
+			border-radius: 50%;
+			background-color: $red;
+			text-align: center;
+			z-index: 10;
+			line-height: 46px;
+			color: #fff;
+			font-size: 18px;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			left: 50%;
+			bottom: -43px;
+			width: 270px;
+		}
+	}
+	h5 {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	article {
+		font-weight: 300;
+		font-size: 1.6rem;
+	}
+}
+
+@for $i from 1 through 4 {
+	.works-item-#{$i}::before {
+		content: '#{$i}';
+	}
+}
+
+@for $i from 1 through 3 {
+	.works-item-#{$i}::after {
+		border-top: 2px dashed $red;
+	}
+}
+/* end section how it works */
