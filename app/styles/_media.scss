@@ -67,6 +67,25 @@
 		}
 	}
 
+	.capabilities-content {
+		margin-top: 10px;
+	}
+
+	.media-item {
+		min-height: 0;
+		margin-top: 50px;
+	}
+
+	.media-item-body {
+		h6 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.works-btn {
+		margin-bottom: 40px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -124,6 +143,17 @@
 	.works-item {
 		& > div {
 			margin-bottom: 90px;
+		}
+	}
+
+	.media-item-body {
+		padding-left: 10px;
+	}
+
+	.works-btn {
+		margin-bottom: 20px;
+		a {
+			margin-bottom: 10px;
 		}
 	}
 

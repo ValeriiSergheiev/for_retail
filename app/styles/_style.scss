@@ -54,7 +54,65 @@
 }
 /* end describe section */
 
+/* capabilities section */
+#capabilities {
+	padding: 40px 0 100px;
+}
+
+.capabilities-content {
+	margin-top: 60px;
+}
+
+.media-item {
+	margin-top: 30px;
+	min-height: 160px;
+}
+
+.media-item-left {
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+	width: 125px;
+}
+
+.media-item-body {
+	display: table-cell;
+	vertical-align: top;
+	padding-left: 30px;
+	h6 {
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+	p {
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+}
+/* end capabilities section */
+
 /* section how it works */
+#works {
+	background-image: url('../images/description-bg-left.jpg');
+	padding: 40px 0 60px;
+}
+
+.works-btn {
+	text-align: center;
+	margin-top: 30px;
+	a {
+		width: 200px;
+		margin: 0 5px;
+		&:first-child {
+			@include btn-rounded ($red, transparent, #fff);
+		}
+		&:last-child {
+			@include btn-rounded (transparent, #fff, inherit);
+		}
+	}
+}
+
 .works-item {
 	text-align: center;
 	& > div {
@@ -114,3 +172,27 @@
 	}
 }
 /* end section how it works */
+
+/* section try */
+#try {
+	background-image: url('../images/try-bg.jpg');
+	padding: 90px 0;
+	text-align: center;
+	h3 {
+		color: #fff;
+		font-size: 3.6rem;
+		font-family: pfbeausanspro-book;
+		margin-bottom: 50px;
+		margin-top: 0;
+	}
+	a {
+		@include btn-sq ($red, #fff);
+		width: 280px;
+		font-size: 1.6rem;
+	}
+}
+/* end section try */
+
+/* section reviews */
+
+/* end section reviews */
