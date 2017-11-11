@@ -39,6 +39,10 @@ a {
 	}
 }
 
+button {
+	outline: none;
+}
+
 .section-title {
 	text-align: center;
 	h2 {
@@ -59,10 +63,22 @@ a {
 .icon-fb {
 	@include sprite($fb);
 }
+.icon-fb-footer {
+	@include sprite($fb-footer);
+}
 .icon-phone {
 	@include sprite($phone);
 }
 .icon-arrow-down {
 	@include sprite($arrow-down);
+}
+.icon-arrow-slider-left {
+	@include sprite($arrow-slider-left);
+}
+.icon-arrow-slider-right {
+	@include sprite($arrow-slider-right);
+}
+.icon-message {
+	@include sprite($message);
 }
 /* end common styles */

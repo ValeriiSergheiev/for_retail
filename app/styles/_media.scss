@@ -17,6 +17,18 @@
 		}
 	}
 
+	.reviews-slide-wrapper {
+		padding: 0;
+	}
+
+	.slick-prev {
+		left: 10px;
+	}
+
+	.slick-next {
+		right: 10px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -86,6 +98,10 @@
 		margin-bottom: 40px;
 	}
 
+	.footer-social, .footer-copyright {
+		text-align: center;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -117,6 +133,15 @@
 	.works-item {
 		min-height: 0;
 		padding-bottom: 30px;
+	}
+
+	.footer-bottom-left {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.footer-bottom-right {
+		text-align: center;
 	}
 
 }
@@ -154,6 +179,12 @@
 		margin-bottom: 20px;
 		a {
 			margin-bottom: 10px;
+		}
+	}
+
+	.reviews-slide-header {
+		img {
+			float: none;
 		}
 	}
 
