@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  //select lang
+  $('.select-lang-btn').click(function(event) {
+    event.stopPropagation();
+    $('.select-lang-content').slideToggle('fast');
+  });
+  $('html, .select-lang-content a').click(function() {
+    $('.select-lang-content').fadeOut();
+  });
+
 	//slider
 	$('.reviews-slider').slick({
   dots: false,

@@ -35,11 +35,11 @@
 @media only screen and (max-width : 992px) {
 
 	.header-top-left {
-		text-align: center;
+		display: none;
 	}
 
 	.header-logo {
-		margin-top: 40px;
+		//margin-top: 40px;
 	}
 
 	.header-top-right {
@@ -94,12 +94,19 @@
 		}
 	}
 
-	.works-btn {
+	.works-btn, .works-tabs {
 		margin-bottom: 40px;
 	}
 
 	.footer-social, .footer-copyright {
 		text-align: center;
+	}
+
+	.footer-social {
+		span {
+			display: block;
+			margin-top: 10px;
+		}
 	}
 
 }
@@ -185,6 +192,12 @@
 	.reviews-slide-header {
 		img {
 			float: none;
+		}
+	}
+
+	.works-tabs {
+		li {
+			margin: 5px 0;
 		}
 	}
 

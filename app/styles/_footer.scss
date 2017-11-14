@@ -26,6 +26,10 @@
 }
 
 .footer-social {
+	span {
+		font-size: 1.6rem;
+		display: none;
+	}
 	text-align: right;
 	a:hover {
 		opacity: .8;
